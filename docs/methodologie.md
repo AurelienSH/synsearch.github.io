@@ -16,8 +16,23 @@ Delphine a mis en place un document [*hack.md*](https://hackmd.io/13aKsikiTVmVB0
 ## Travail intermédiaire
 
 -> citer les documents à retrouver dans le github comme trace du travail. 
+-> Julie :lien vers les notebooks / tuto fait pour le projet. 
 
--> test d'autres classifications / tuto etc. 
+## Les autres pistes envisagées 
+
+### Pour les données et leur augmentation
+
+#### Back Translation
+
+#### Summarization
+
+### Pour le système
+
+#### Classification avec BERT
+
+#### Doc2Vec
+
+Nous avons considéré, au début, d'utiliser Doc2Vec pour obtenir les embeddings de nos documents. Néanmoins, nous avons préféré l'option des Sentences Transformers car nous pouvions les personnaliser avec le fine-tuning. 
 
 ## Et après ? 
 

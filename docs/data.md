@@ -10,7 +10,9 @@
 - 50 échantillons pour tester (long à créer)
 - utiliser pour le [fine tuning](systeme.md)
 
-### Augmentation automatique 
+### Augmentation automatique (si réussi, sinon à mettre dans la partie méthodologie)
+
+(si rien, mettre voir [ici](methodologie.md#pour-les-données-et-leur-augmentation))
 
 #### backtranslation 
 
