@@ -41,16 +41,13 @@ Pour avoir ce format de dataset, nous avons [augmenté manuellement nos données
 
 Voici un exemple de données obtenues :
 
->
-> :label: *title* : Findind Nemo <br>
-> :page_facing_up: *synopsis* : Nemo, an adventurous young clownfish, is unexpectedly taken from his Great Barrier Reef home to a dentist's office aquarium. It's up to his worrisome father Marlin and a friendly but forgetful fish Dory to bring Nemo home -- meeting vegetarian sharks, surfer dude turtles, hypnotic jellyfish, hungry seagulls, and more along the way. <br>
->:question: *query* : I want to watch a heartwarming animated movie suitable for the whole family.
+| id | synopsis | title          | **query**                                                          |
+|----|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|-----------------------------------------------------------------|
+| 0  | It's Ted the Bellhop's first night on the job...and the hotel's very unusual guests are about to place him in some outrageous predicaments. It seems that this evening's room service is serving up one unbelievable happening after another.                                                                                                                                                                    | Four Rooms     | **I want to watch a quirky and chaotic comedy movie**              |
+| 1  | While racing to a boxing match, Frank, Mike, John and Rey get more than they bargained for. A wrong turn lands them directly in the path of Fallon, a vicious, wise-cracking drug lord. After accidentally witnessing Fallon murder a disloyal henchman, the four become his unwilling prey in a savage game of cat & mouse as they are mercilessly stalked through the urban jungle in this taut suspense drama | Judgment Night | **I'm in the mood for an intense and action-packed thriller movie** |
 
 
 En suivant la documentation, nous avons utiliser la [*Triplet Loss*](https://www.sbert.net/docs/package_reference/losses.html#tripletloss) pour fine-tuner notre modèle. 
-
->[!Note]
-> ajouter le fonction en latex ? 
 
 Cette méthode a permis d'améliorer les suggestions en rapprochant les requêtes et les synopsis déjà proches et en éloignant les moins proches. 
 
@@ -72,5 +69,4 @@ où le label dépend de l'avis de l'utilisateur. Nous avons arbitrairement chois
 Ces valeurs ont été choisi après observation des données, pour que les labels aient des valeurs légérement en dessus et en dessous des maximum et des minimums du calcul de la distance cosinus. 
 
 >[!Warning]
-> Néanmoins, nous n'avons pas trouver de moyen de lancer automatiquement ce fine-tuning. Il faut qu'il soit activé par une personne. Cela fait partie des pistes d'amélioration évoqué [ici](methodologie.md#et-après)
-
+> explication de l'automatisation
