@@ -1,34 +1,36 @@
 # Interface Web 
 
-**app**
-├── **embeddings**
+```bash
+app
+├── embeddings
 │   ├── embeddings_FT_corpus_movie
 │   └── embeddings_corpus_movie
-├── **models**
+├── models
 │   ├── sentence_similarity_model
 │   └── sentence_similarity_model_FT
-├── **src**
-│   ├── database.db
-│   ├── database.py
-│   ├── main.py
-│   ├── models.py
-│   ├── schemas.py
-│   ├── **scripts**
+├── src
+│   ├── scripts
 │   │   ├── finetune_first_model.py
 │   │   ├── finetuning.py
 │   │   ├── preprocessing.py
 │   │   ├── similarity.py
 │   │   └── utils.py
+│   ├── database.db
+│   ├── database.py
+│   ├── main.py
+│   ├── models.py
+│   ├── schemas.py
 │   └── services.py
-├── **static**
+├── static
 │   ├── LICENSE.txt
 │   ├── README.txt
-│   ├── **assets**
+│   ├── assets
 │   │   ├── css
 │   │   ├── js
 │   │   ├── sass
 │   │   └── webfonts
-│   ├── **images**
+│   ├── images
 │   └── index.html
-└── **templates**
+└── templates
     └── result_table.html.jinja
+```
